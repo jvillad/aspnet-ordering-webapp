@@ -1,0 +1,28 @@
+﻿@page "/menu"
+@model TheUltimatePizzaApp.Pages.Pizzas.AllPizzasModel
+@{
+	ViewData["Title"] = "Menu";
+}
+
+<div class="container">
+	<div class="menu-headings">
+		<h1 class="view-data-title">@ViewData["Title"]</h1>
+		<h2> Great range of pizzas to select from !!!!</h2>
+		<h4> Select a pizza and just check out!!!</h4>
+	</div>
+		<div class="row">
+			@foreach (var pizza in Model.fakePizzaDb)
+			{
+				var photoPath = "~/images/" + (pizza.ImageTitle + ".png");
+				<div class="col-4 mb-5">
+					<img src="@photoPath" class="w-100 rounded" asp-append-version="true" />
+					<a class="btn-checkout mt-2" asp-area="" asp-page="/cart/checkout"
+				   asp-route-ImageTitle="@pizza.ImageTitle"
+				   asp-route-PizzaName="@pizza.PizzaName"
+				   asp-route-PizzaPrice="@pizza.BasePrice"> Get me that pizza!</a>
+					<br />
+				</div>
+			}
+		</div>
+	
+</div>

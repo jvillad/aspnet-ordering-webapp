@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+.brand {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+span.trade-mark {
+    font-weight: 100;
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+.view-data-title {
+    color: #404854;
+}
+
+
+.log-date {
+    color: #212721;
+    font-weight: bold;
+}
+
+.bg-image {
+    padding: 150px 0;
+    position: relative;
+    background-image: url('../images/pizza-light-color.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 100vw;
+    height: 450px;
+    max-height: auto;
+    background-position: center center;
+    background-size: cover;
+}
+
+    /*Pseudo element for the bg-image*/
+    .bg-image::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+.cover-wrapper {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    background-color: #fefdfd;
+    padding: 25px;
+    border-radius: 25px;
+    opacity: 0.9;
+    max-height: 100%;
+}
+
+.cover-content {
+    position: relative;
+    color: #212721;
+    text-align: center;
+    opacity: 0.9;
+    height: auto;
+}
+
+p.cover-title {
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+a.cover-btn {
+    display: block;
+    padding: 15px;
+    background-color: #0a0a0a;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 300px;
+    max-width: 100%;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+    a.cover-btn:hover {
+        border: 1px solid red;
+    }
+
+.position-right {
+    display: grid;
+    place-content: end;
+    place-items: center;
+}
+
+@media (max-width: 576px) {
+    .position-right {
+        max-width: 540px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand {
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    body > main > div.container.d-flex.resp.justify-content-center.pt-4 > div {
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+}
+
+.menu-headings {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.btn-checkout {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background-color: #0a0a0a;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+
+.nav-item a:hover {
+    color: #c2410c;
+}
+
+.card--img {
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+}
+
+.card--link {
+    text-decoration: none;
+    color: #212721;
+}
+
+    .card--link:hover {
+        color: #dc2626;
+    }
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.navbar-nav .nav-link {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+

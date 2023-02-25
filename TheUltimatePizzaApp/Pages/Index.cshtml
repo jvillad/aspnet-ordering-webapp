@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+<div class="bg-image">
+	@*added div to position right within the container to add space*@
+	<div class="position-right container">
+		<div class="cover-wrapper">
+			<div class="cover-content container">
+				<p class="cover-title">Welcome to the best ordering app!</p>
+				<p class="pb-3">Logging Time: <span class="log-date">@DateTime.Now</span></p>
+				<a class="cover-btn" asp-page="menu/allpizzas">GO TO PIZZAS</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container d-flex resp justify-content-center pt-4">
+	<div class="row bd-highlight mb-3 gap-5">
+		<div class="" style="width: 18rem;">
+			<a href="#" class="card--link">
+				<img class="card--img" src="~/images/pizza-menu.jpeg" />
+				<div class="d-flex py-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+					Our favourites!
+				</div>
+			</a>
+		</div>
+
+		<div class="" style="width: 18rem;">
+			<a href="#" class="card--link">
+				<img class="card--img" src="~/images/pizza-promotion.jpeg" />
+				<div class="d-flex py-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+					Check our promotions!
+				</div>
+			</a>
+		</div>
+
+		<div class="" style="width: 18rem;">
+			<a href="#" class="card--link">
+				<img class="card--img" src="~/images/signin-pizza.jpeg" />
+				<div class="d-flex py-2">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+					Connect with us on social media!
+				</div>
+			</a>
+		</div>
+	</div>
+
+</div>
+
