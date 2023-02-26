@@ -1,0 +1,24 @@
+﻿@page "/stores"
+@model TheUltimatePizzaApp.Pages.Store.StoresModel
+@{
+	ViewData["Title"] = "Stores";
+}
+
+<div class="container d-flex justify-content-center">
+	<div class="py-5">
+		<h1>View all stores</h1>
+
+		<ul class="container store-list">
+
+			@foreach (var store in Model.Store)
+			{
+				<li class="row py-5">
+					@store.Name<br />
+					@store.Phone<br />
+					<a href="#" class="text-danger store-email">@store.Email</a>
+				</li>
+			}
+
+		</ul>
+	</div>
+</div>
