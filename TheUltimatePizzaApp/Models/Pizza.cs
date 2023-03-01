@@ -1,9 +1,21 @@
-﻿namespace TheUltimatePizzaApp.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TheUltimatePizzaApp.Model
 {
-    public class Pizza
-    {
-        public string ImageTitle { get; set; }
-        public string PizzaName { get; set; }
-        public double BasePrice { get; set; }
-    }
+	public class Pizza
+	{
+		[Key]
+		public int Id { get; set; }
+		[Required]
+		public string ImageTitle { get; set; }
+		[Required]
+		public string PizzaName { get; set; }
+		[Required]
+		public double BasePrice { get; set; }
+
+
+		public Pizza()
+		{
+		}
+	}
 }
