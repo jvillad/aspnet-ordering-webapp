@@ -15,11 +15,14 @@
 			{
 				var photoPath = "~/images/" + (pizza.ImageTitle + ".png");
 				<div class="col-4 mb-5">
-					<img src="@photoPath" class="w-100 rounded" asp-append-version="true" />
+					<img src="@photoPath" 
+						class="w-100 rounded" 
+						asp-append-version="true" />
+				<p class="text-center text-danger fw-bold pt-2">@pizza.BasePrice.ToString("c")</p>
 					<a class="btn-checkout mt-2" asp-area="" asp-page="/cart/checkout"
 				   asp-route-ImageTitle="@pizza.ImageTitle"
 				   asp-route-PizzaName="@pizza.PizzaName"
-				   asp-route-PizzaPrice="@pizza.BasePrice"> Get me that pizza!</a>
+				   asp-route-PizzaPrice="@pizza.BasePrice"> Get me that @pizza.PizzaName</a>
 					<br />
 				</div>
 			}
