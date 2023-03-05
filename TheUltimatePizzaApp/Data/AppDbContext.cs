@@ -10,5 +10,6 @@ namespace TheUltimatePizzaApp.Data
 
 		}
 		public DbSet<Pizza> Pizzas { get; set; }
+		public DbSet<Pizza> Products { get; set; }
 	}
 }
